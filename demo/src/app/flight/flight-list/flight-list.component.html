@@ -5,7 +5,7 @@
   </ol>
 </nav>
 <div class="card">
-  <div class="header">
+  <div class="header"> <!-- Se tradujo del Ingles al español la parte del formulario y botones de buscar y nuevo  -->
     <h2 class="title">Lista de Vuelos</h2>
   </div>
   <div class="content">
@@ -46,9 +46,9 @@
           <td>{{item.from}}</td>
           <td>{{item.to}}</td>
           <td>{{item.date | date}}</td>
-          <td style="white-space: nowrap">
-            <a [routerLink]="['../flights', item.id ]" class="btn btn-secondary">Edit</a>&nbsp;
-            <button (click)="delete(item)" class="btn btn-danger">Delete</button>
+          <td style="white-space: nowrap"> <!-- Se tradujo del Ingles al español los botones  -->
+            <a [routerLink]="['../flights', item.id ]" class="btn btn-secondary">Editar</a>&nbsp;
+            <button (click)="delete(item)" class="btn btn-danger">Eliminar</button>
           </td>
         </tr>
       </tbody>

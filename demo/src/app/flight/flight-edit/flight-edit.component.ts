@@ -37,8 +37,8 @@ export class FlightEditComponent implements OnInit {
           this.flight = flight;
           this.feedback = {};
         },
-        err => {
-          this.feedback = {type: 'warning', message: 'Error loading'};
+        err => {   //Se tradujo del Ingles al español los mensajes de guardado y advertencia 
+          this.feedback = {type: 'Advertencia', message: 'Error al cargar'};
         }
       );
   }
@@ -47,18 +47,18 @@ export class FlightEditComponent implements OnInit {
     this.flightService.save(this.flight).subscribe(
       flight => {
         this.flight = flight;
-        this.feedback = {type: 'success', message: 'Save was successful!'};
+        this.feedback = {type: 'Exito', message: '¡El guardado fue exitoso!'};
         setTimeout(() => {
-          this.router.navigate(['/flights']);
+          this.router.navigate(['/Vuelos']);
         }, 1000);
       },
       err => {
-        this.feedback = {type: 'warning', message: 'Error saving'};
+        this.feedback = {type: 'Advertencia', message: 'Error al guardar'};
       }
     );
   }
 
   cancel() {
-    this.router.navigate(['/flights']);
+    this.router.navigate(['/Vuelos']);
   }
 }

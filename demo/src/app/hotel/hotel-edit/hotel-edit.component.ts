@@ -38,7 +38,7 @@ export class HotelEditComponent implements OnInit {
           this.feedback = {};
         },
         error: err => {
-          this.feedback = {type: 'warning', message: 'Error loading'};
+          this.feedback = {type: 'Advertencia', message: 'Error al cargar'};
         }
       });
   }
@@ -47,13 +47,13 @@ export class HotelEditComponent implements OnInit {
     this.hotelService.save(this.hotel).subscribe({
       next: hotel => {
         this.hotel = hotel;
-        this.feedback = {type: 'success', message: 'Save was successful!'};
+        this.feedback = {type: 'Exito', message: '¡El guardado fue exitoso!'};
         setTimeout(async () => {
           await this.router.navigate(['/hotels']);
         }, 1000);
       },
       error: err => {
-        this.feedback = {type: 'warning', message: 'Error saving'};
+        this.feedback = {type: 'Advertencia', message: 'Error al guardar'};
       }
     });
   }
