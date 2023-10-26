@@ -1,33 +1,27 @@
 <div class="card">
-  <div class="header">
-    <h1 class="title">Welcome {{userName}}</h1>
+  <div class="centered">
+    <img src="https://brandemia.org/sites/default/files/inline/images/trivago_logo_despues.jpg" alt="Logo de Trivago" class="imagen">
+    <h1 class="title">Bienvenidos a Trivago</h1>
   </div>
   <div class="content">
-
-    <div *ngIf="needsLogin" class="alert alert-warning">
-      You have been redirected to this page because you don't have the necessary
-      rights for the reqeusted action. Login with a respective user account!
-    </div>
-
-    <button (click)="login()" class="btn btn-default">Login</button>
-    <button (click)="logout()" class="btn btn-default">Logout</button>
-
-    <!--
-    <tabbed-pane [activeId]="0">
-        <tab title="Booked" [id]="0">
-            This page could display all booked passengers ...
-        </tab>
-        <tab title="Checked in" [id]="1">
-            This page could display all checked in passengers ...
-        </tab>
-
-        <tab title="Boarded" [id]="2">
-            This page could display all boarded passengers ...
-        </tab>
-    </tabbed-pane>
-    -->
+    <p>Su portal para explorar las mejores ofertas de viajes y alojamiento en todo el mundo.</p>
+    <p>Descubra destinos emocionantes, reserve hoteles, vuelos y paquetes de vacaciones con facilidad.</p>
+    <p>¡Déjese inspirar y planifique su próximo viaje con nosotros!</p>
   </div>
-
 </div>
-
-
+<div class="content">
+  <div class="image-carousel">
+    <img src="https://cdn.bolivia.com/sdi/2018/08/30/cual-es-la-mejor-fecha-para-visitar-el-salar-de-uyuni-667551.jpg" alt="Lugar Turístico 1">
+    <img src="https://lagavetavoladora.com/wp-content/uploads/2015/09/Copacabana-e1441301799807-1280x720.jpg" alt="Lugar Turístico 2">
+    <img src="https://www.laregion.bo/wp-content/uploads/2020/03/santiago-ch.jpg" alt="Lugar Turístico 3">
+    <img src="https://www.laregion.bo/wp-content/uploads/2018/07/WhatsApp-Image-2018-07-24-at-16.31.07.jpeg" alt="Lugar Turístico 3">
+    <img src="https://www.laregion.bo/wp-content/uploads/2021/05/VILLA-AMBORO-35.jpg" alt="Lugar Turístico 5">
+    <img src="https://www.laregion.bo/wp-content/uploads/2020/09/rio-colorado.jpeg" alt="Lugar Turístico 6">
+    <!-- Agrega más imágenes aquí -->
+  </div>
+  <div class="carousel-navigation">
+    <button class="prev-button">◄</button>
+    <button class="next-button">►</button>
+  </div>
+<!--Se elimino la parte del login y 
+  logout para poner una bienvenida de una agencia de viajes con una pequeña introduccion -->

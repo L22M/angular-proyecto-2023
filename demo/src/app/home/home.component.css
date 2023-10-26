@@ -1,0 +1,68 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imagen {
+    max-width: 70%; /* Ajusta el tamaño de la imagen según tu preferencia */
+    max-height: 70%; /* Ajusta el tamaño de la imagen según tu preferencia */
+  }
+  .image-carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .image-carousel img {
+    max-width: 20%;
+    transition: transform 0.5s;
+  }
+  
+  /* Estilos para la transición del carrusel */
+  .image-carousel:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .prev-button,
+  .next-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .prev-button {
+    position: absolute;
+    left: 10px;
+  }
+  
+  .next-button {
+    position: absolute;
+    right: 10px;
+  }
+  
+  /* Estilos para la transición del carrusel */
+  .carousel-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Estilos para los botones de navegación */
+  .prev-button:hover,
+  .next-button:hover {
+    font-size: 28px;
+  }
+ 
+  /* Se realizo ciertos estilos lo cuales centran y reduce el tamaño de imagen */

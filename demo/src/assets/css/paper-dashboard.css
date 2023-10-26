@@ -31,7 +31,7 @@
 }
 
 .ct-red {
-  stroke: #DD0330 !important;
+  stroke: #060808 !important;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td {
@@ -110,7 +110,7 @@ blockquote small {
 }
 
 .text-primary, .text-primary:hover {
-  color: #427C89;
+  color: #7cacb7;
 }
 
 .text-info, .text-info:hover {

@@ -6,23 +6,23 @@
 </nav>
 <div class="card">
   <div class="header">
-    <h2 class="title">Flight List</h2>
+    <h2 class="title">Lista de Vuelos</h2>
   </div>
   <div class="content">
     <form #f="ngForm">
 
       <div class="form-group">
-        <label for="from">From:</label>
+        <label for="from">De :</label>
         <input [(ngModel)]="filter.from" id="from" name="from" class="form-control">
       </div>
 
       <div class="form-group">
-        <label for="to">To:</label>
+        <label for="to">A:</label>
         <input [(ngModel)]="filter.to" id="to" name="to" class="form-control">
       </div>
 
-      <button (click)="search()" [disabled]="!f?.valid" class="btn btn-primary">Search</button>
-      <a [routerLink]="['../flights', 'new' ]" class="btn btn-default ml-2">New</a>
+      <button (click)="search()" [disabled]="!f?.valid" class="btn btn-primary">Buscar</button>
+      <a [routerLink]="['../flights', 'new' ]" class="btn btn-default ml-2">Nuevo</a>
     </form>
   </div>
 </div>
@@ -33,9 +33,9 @@
       <thead>
         <tr>
           <th class="border-top-0" scope="col">Id</th>
-          <th class="border-top-0" scope="col">From</th>
-          <th class="border-top-0" scope="col">To</th>
-          <th class="border-top-0" scope="col">Date</th>
+          <th class="border-top-0" scope="col">De</th>
+          <th class="border-top-0" scope="col">A</th>
+          <th class="border-top-0" scope="col">Fecha</th>
           <th class="border-top-0" scope="col" style="width:120px"></th>
         </tr>
       </thead>

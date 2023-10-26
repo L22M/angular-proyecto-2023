@@ -1,6 +1,7 @@
 import { ExtraOptions, PreloadAllModules, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
+
 export const APP_ROUTES: Routes = [
   {
     path: '',
@@ -13,7 +14,8 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'home'
+    redirectTo: 'hotel',
+    
   }
 ]
 

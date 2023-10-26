@@ -68,9 +68,9 @@
 }
 
 .sidebar .nav > li.active-pro a {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(204, 28, 28, 0.14);
   opacity: 1;
-  color: #FFFFFF;
+  color: #be1212;
 }
 
 .table-upgrade td:nth-child(2),
